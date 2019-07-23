@@ -6,20 +6,20 @@ print('Hello, World!')
 hello="hello"
 world="world"
 python="python"
-print(hello,world,python)
+print(hello,world,python) #hello world python
 
 #3 Seperating objects using named parameter 'sep'
-print(hello,world,python, sep=', ')
+print(hello,world,python, sep=', ') #hello, world, python
 
 #4 printing on multiple lines
 fox_line="The quick brown fox"
 dog_line="jumped over the lazy dog"
-print(fox_line)
-print(dog_line)
+print(fox_line) #same as 1
+print(dog_line) #same as 1
 
 #5 or keeping the cursor on same line at the 'end'
 print(fox_line, end=", ")
-print(dog_line)
+print(dog_line) #The quick brown fox, jumped over the lazy dog
 
 #TODO using the 'file' and 'flush' named parameters
 
