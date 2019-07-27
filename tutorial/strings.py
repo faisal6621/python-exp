@@ -21,3 +21,13 @@ str4 = '\'A " not needed to be escaped in single quotes\''
 print(str3)
 print(str4)
 
+# 5: \ is not just to escape quotes, it has other meanings too. 
+# e.g., \n means a new line and if used within string will break it to two
+# lines
+str5="This string contains \new line character"
+print(str5)
+
+# 6: or treat such string as raw strings with r prefixed
+str6=r"This li\ne will not break"
+print(str6)
+
