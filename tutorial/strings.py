@@ -8,9 +8,9 @@ str2 = '\'A single quoted string\''
 print(str1)
 print(str2)
 
-# 3: an escap character (\) is used if you are using " within double quoted
+# 3: an escape character (\) is used if you are using " within double quoted
 # string or vice versa
-# - In above example we have used the escape charater
+# - In above example we have used the escape character
 
 # 4: but you do not need to escape ' within double quoted string and vice
 # versa
@@ -34,11 +34,11 @@ print(str6)
 # 7: String literals can span multiple lines using triple quotes (""" or ''')
 # new line characters automatically included but can be prevented by using \
 str7 = """\
-    {
-      name: "John", \
-      age: 31, \
-      city: "New York"
-    }"""
+{
+  name: "John", \
+  age: 31, \
+  city: "New York"
+}"""
 print(str7)
 
 # 8: strings can be concatenated with +
@@ -59,8 +59,8 @@ print(str9[0], str9[6])
 print(str9[-1], str9[-7])
 
 # 13: slicing a string
-print(str9[0:5]) # from index 0 (included) to 5 (excluded)
-print(str9[6:11]) # from index 6 (included) to 11 (excluded)
-print(str9[:5]) # omitting left of : will slice from begining to 5 (excluded)
-print(str9[6:]) # omitting right of : will slice from 6 (included) to the end
-
+print(str9[0:5])  # from index 0 (included) to 5 (excluded)
+print(str9[6:11])  # from index 6 (included) to 11 (excluded)
+print(str9[:5])  # omitting left of : will slice from beginning to 5 (excluded)
+print(str9[6:])  # omitting right of : will slice from 6 (included) to the end
+print(str9[-4:-2])  # slicing indexes from right
