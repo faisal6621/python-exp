@@ -65,4 +65,8 @@ print(str9[:5])  # omitting left of : will slice from beginning to 5 (excluded)
 print(str9[6:])  # omitting right of : will slice from 6 (included) to the end
 print(str9[-4:-2])  # slicing indexes from right
 
+# 14: strings are immutable, therefore you can not change character at some given index
+# str9[0] = 'W'  # intentionally commented line to prevent error
+# the above line will give an error: TypeError: 'str' object does not support item assignment
+
 # TODO Strings are examples of sequence types
