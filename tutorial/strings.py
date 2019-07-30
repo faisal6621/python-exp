@@ -64,3 +64,5 @@ print(str9[6:11])  # from index 6 (included) to 11 (excluded)
 print(str9[:5])  # omitting left of : will slice from beginning to 5 (excluded)
 print(str9[6:])  # omitting right of : will slice from 6 (included) to the end
 print(str9[-4:-2])  # slicing indexes from right
+
+# TODO Strings are examples of sequence types
