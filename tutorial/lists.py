@@ -38,3 +38,6 @@ print("length of squares:", len(squares))
 letters = ['a', 'b', 'c', 'd']
 numbers_letters = [squares, letters]
 print(numbers_letters)
+
+# 9: retrieving from nested list
+print(numbers_letters[0][1], numbers_letters[1][0])
