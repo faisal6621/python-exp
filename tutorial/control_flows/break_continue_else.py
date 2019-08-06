@@ -17,10 +17,6 @@ for n in range(1, 10):
 
 
 # https://docs.python.org/3/tutorial/controlflow.html#pass-statements
-# 3: pass statement does nothing
+# 3: pass statement is used for empty declarations
 def nothing():
-    print('this is going to do nothing')
-    pass
-
-
-nothing()
+    pass  # an empty method. if you comment this line the python interpreter will give you errors
