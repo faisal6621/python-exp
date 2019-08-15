@@ -64,3 +64,13 @@ cheeseshop(
     "It's very runny, sir.", "It's really very, VERY runny, sir.",  # arbitrary arguments
     shopkeeper="Michael Palin", client="John Cleese", sketch="Cheese Shop Sketch"  # arbitrary arguments dictionary
 )
+
+# 4.4 unpacking argument list - arguments stored in list or tuple can be unpacked into positional arguments
+# and dictionaries can deliver keyword arguments
+range_list = [3, 9]
+range_tuple = 1, 5
+print(list(range(*range_list)))  # * is used to unpack list or tuple for positional arguments
+print(list(range(*range_tuple))) # same as above
+
+dictionary = {"voltage": "four million", "state": "bleedin' demised", "action": "VOOM"}
+parrot(**dictionary)  # ** is used to unpack dictionary for keyword arguments
