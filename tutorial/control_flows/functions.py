@@ -1,6 +1,8 @@
 # 1: defining a function requires the keyword - def
 def greet(name):
-    """A nice way to entertain your guest is to greet them with welcome"""
+    """Greeting a user.
+
+    A nice way to entertain your guest is to greet them with welcome"""
     print("Welcome", name)
 
 
@@ -70,7 +72,30 @@ cheeseshop(
 range_list = [3, 9]
 range_tuple = 1, 5
 print(list(range(*range_list)))  # * is used to unpack list or tuple for positional arguments
-print(list(range(*range_tuple))) # same as above
+print(list(range(*range_tuple)))  # same as above
 
 dictionary = {"voltage": "four million", "state": "bleedin' demised", "action": "VOOM"}
 parrot(**dictionary)  # ** is used to unpack dictionary for keyword arguments
+
+
+# 5: lambda expressions are anonymous functions created with lambda keyword
+# syntactically lambdas are restricted to one line only
+# semantically they are just syntactic sugar for normal function definition
+# https://docs.python.org/3/tutorial/controlflow.html#lambda-expressions
+def add_to(n):
+    return lambda x: n + x
+
+
+func = add_to(10)  # returns an anonymous lambda function
+print(func(5))  # adds 5 to previous value (10)
+print(func(7))  # adds 7 to previous value (10)
+
+pairs = [(2, 'two'), (4, 'four'), (1, 'one'), (3, 'three')]
+pairs.sort(key=lambda item: item[0])
+print(pairs)
+pairs.sort(key=lambda item: item[1])
+print(pairs)
+
+# 6: documenting functions
+# https://docs.python.org/3/tutorial/controlflow.html#documentation-strings
+print(greet.__doc__)
