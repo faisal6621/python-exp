@@ -17,12 +17,15 @@ print('the banana is found at', banana_index1, 'and', banana_index2, 'indexes')
 fruits.reverse()
 print('reversed', fruits)
 
-# adding a new new item at the end of the list
+# adding a new item at the end of the list
 fruits.append('grape')
 print('appended', fruits)
 
+# adding a new item at the given index in the list
+fruits.insert(2, 'papaya')
+print('inserted', fruits)
 # sorting the list
-fruits.sort(key=lambda fruit: len(fruit))
+fruits.sort(key=lambda fruit: (len(fruit), fruit))
 print('sorted by length', fruits)
 fruits.sort()
 print('default sort', fruits)
