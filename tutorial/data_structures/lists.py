@@ -1,6 +1,7 @@
 # 1: lists are treated as sequences (discussed earlier in tutorial/lists.py).
 # discussing here: methods available on list object
 # https://docs.python.org/3/tutorial/datastructures.html#data-structures
+from builtins import list
 from collections import deque
 
 fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
@@ -54,3 +55,23 @@ queue.append(5)
 print('updated queue', queue)
 popleft = queue.popleft()
 print('removed', popleft, 'from', queue)
+
+# 4: list comprehensions
+# concise way to create list
+# 4.1:
+squares = []
+for i in range(10):
+    squares.append(i ** 2)
+print(squares)
+
+# 4.2:
+cubes = list(map(lambda x: x ** 3, range(10)))
+print(cubes)
+
+# 4.3:
+twice = [x * 2 for x in range(10)]
+print(twice)
+
+# 4.4:
+pairs = [(x, y) for x in [1, 2, 3] for y in [3, 4, 1] if x != y]
+print(pairs)
