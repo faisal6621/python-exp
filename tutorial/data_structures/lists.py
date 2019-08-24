@@ -58,20 +58,20 @@ print('removed', popleft, 'from', queue)
 
 # 4: list comprehensions
 # concise way to create list
-# 4.1:
+# 4.1: old school - looping
 squares = []
 for i in range(10):
     squares.append(i ** 2)
 print(squares)
 
-# 4.2:
+# 4.2: functional style - lambda and in-built methods
 cubes = list(map(lambda x: x ** 3, range(10)))
 print(cubes)
 
-# 4.3:
+# 4.3: concise and comprehensive
 twice = [x * 2 for x in range(10)]
 print(twice)
 
-# 4.4:
+# 4.4: more comprehensive (complex?)
 pairs = [(x, y) for x in [1, 2, 3] for y in [3, 4, 1] if x != y]
 print(pairs)
