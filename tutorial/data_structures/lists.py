@@ -75,3 +75,14 @@ print(twice)
 # 4.4: more comprehensive (complex?)
 pairs = [(x, y) for x in [1, 2, 3] for y in [3, 4, 1] if x != y]
 print(pairs)
+
+# 4.5: nested list comprehension (more complex?). e.g., transposing a matrix
+matrix = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12],
+]
+transpose = [[row[i] for row in matrix] for i in range(4)]
+# In the real world, you should prefer built-in functions to complex flow statements.
+# The zip() function would do a great job for this use case
+print(transpose)
