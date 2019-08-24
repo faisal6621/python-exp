@@ -86,3 +86,16 @@ transpose = [[row[i] for row in matrix] for i in range(4)]
 # In the real world, you should prefer built-in functions to complex flow statements.
 # The zip() function would do a great job for this use case
 print(transpose)
+
+# 5: the del statement
+# 5.1: removing item from index (no value is returned like in case of pop())
+del twice[3]
+print(twice)
+# 5.2: deletion by slicing
+del twice[4:7]
+print(twice)
+# 5.3: empty a list
+del twice[:]
+print(twice)
+# 5.4: deleting entire variable (the variable then can not longer be referenced)
+del twice
