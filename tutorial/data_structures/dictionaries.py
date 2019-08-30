@@ -41,8 +41,3 @@ print(numbers)
 cards.update(types=4)
 print(cards)
 print(dict(three=3, five=5, seven=7))
-
-# 10: looping: key and value can be retrieved at the same time using items()
-for k, v in cards.items():
-    print('key:', k, 'value:', v, end=' | ')
-print()
