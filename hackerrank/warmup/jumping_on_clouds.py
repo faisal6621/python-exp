@@ -1,4 +1,4 @@
-# Complete the jumpingOnClouds function below.
+# https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem
 def jumpingOnClouds(c):
     safe_position = 0
     jumps = 0
