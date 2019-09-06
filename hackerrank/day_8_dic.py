@@ -12,4 +12,7 @@ while name:
         print(name, phonebook[name], sep='=')
     else:
         print('Not found')
-    name = input()
+    try:
+        name = input()
+    except EOFError:
+        break
