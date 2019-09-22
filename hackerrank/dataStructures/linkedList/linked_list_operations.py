@@ -20,6 +20,18 @@ def insertNodeAtTail(head, data):
     return head
 
 
+def insertNodeAtPosition(head, data, position):
+    item = head
+    for i in range(position - 1):
+        item = item.next
+
+    tmp = item.next
+    node = SinglyLinkedListNode(data)
+    node.next = tmp
+    item.next = node
+    return head
+
+
 if __name__ == '__main__':
     llist_count = int(input())
 
@@ -30,6 +42,12 @@ if __name__ == '__main__':
         llist.insert_node(llist_item)
 
     printLinkedList(llist.head)
+
     data = input('item to add at tail: ')
     llist.head = insertNodeAtTail(llist.head, data)
+    printLinkedList(llist.head)
+
+    data = int(input('item to add: '))
+    position = int(input('position: '))
+    llist.head = insertNodeAtPosition(llist.head, data, position)
     printLinkedList(llist.head)
